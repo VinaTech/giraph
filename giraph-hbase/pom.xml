@@ -83,6 +83,23 @@ under the License.
   </build>
 
   <profiles>
+  <profile>
+      <id>hadoop_cdh4.1.2</id>
+	  <properties>
+        <hadoop.mr.version>2.0.0-mr1-cdh4.1.2</hadoop.mr.version> 
+        <hadoop.version>2.0.0-cdh4.1.2</hadoop.version> 
+        <munge.symbols>HADOOP_1_SECRET_MANAGER</munge.symbols>        
+      </properties>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-test</artifactId>
+          <version>${hadoop.mr.version}</version>
+          <scope>test</scope>
+        </dependency>	      
+      </dependencies>
+    </profile>
+	
     <profile>
       <id>hadoop_0.20.203</id>
       <activation>
