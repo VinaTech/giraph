@@ -204,41 +204,14 @@
 	<repositories>
 		<repository>
 			<id>central</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/central/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
-		<repository>
-			<id>cloudera cdh</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/cloudera-repos/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>apache</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/apache/</url>
+			<url>http://192.168.1.209:8081/nexus/content/groups/public/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
-		</repository>
-		<repository>
-			<id>sonatype</id>
-			<url>http://192.168.1.209:8081/nexus/content/repositories/sonatype/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-		</repository>
+		</repository>		
 	</repositories>
 
 	<properties>
